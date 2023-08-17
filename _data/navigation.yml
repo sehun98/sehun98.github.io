@@ -1,0 +1,7 @@
+# main links
+main:
+  - auto_categories: true
+  - title: "Manifesto"
+    url: /Manifesto/
+  - title: "STUDY ARCHIVE"
+    url: /categories/
