@@ -29,7 +29,6 @@ logo                     : "/assets/images/Blog/88x88.png" # path of logo image 
 masthead_title           : "정리하는 개발자" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
-futrue                   : true # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
