@@ -1,6 +1,6 @@
 ---
 title: "Study Archive"
-permalink: /categories/
-layout: categories
+permalink: /Study_Archive/
+layout: Study_Archive
 author_profile: true
 ---

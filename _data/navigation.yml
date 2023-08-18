@@ -3,5 +3,5 @@ main:
   - auto_categories: true
   - title: "Manifesto"
     url: /Manifesto/
-  - title: "STUDY ARCHIVE"
-    url: /categories/
+  - title: "Study Archive"
+    url: /Study_Archive/
