@@ -104,9 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : *name "오세훈(Oh sehun)"
+  name             : *name
   avatar           : "/assets/images/Blog/sehun.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**꿈꾸는 개발자** 오세훈입니다. <br><br>도서 세이노의 가르침에서 말합니다. <br>"세상을 욕하고 가래침을 줄곧 뱉었지만 정작 나 자신도 크게 다를 바 없었다. <br>··· 아무하는 일도 없이 꿈틀거리기만 했다. ··· <br>벌레처럼 나는 먹고 싸고 먹고 싸고 그런 존재였던 것이다. 어제가 오늘이고 오늘이 내일이었으며 내일은 다시 어제였다.""
+  bio              : "**의료기기 개발자 지망생** 오세훈입니다. <br><br>코딩하기 앞서 손 코딩과 가상 시뮬레이션을 돌려보고 **시간 복잡도는 얼마인지, 메모리가 초과될지, 무한루프가 돌진 않을지 따져가면서 알고리즘을 생각하자."
+  #<br><br>우리가 부러워하는 대부분은 스스로 성공을 일구었습니다. <br>그들은 스스로 연구하거나, 기회를 직접 찾아나섰기 때문에 운이 다가오면 그 운을 제대로 사용할 수 있는 준비가 되어 있었고 행운의 순간을 놓치지 않은 것 뿐입니다.
   location         : "Seoul, Republic of Korea"
   email            :
   links:
@@ -355,6 +356,99 @@ defaults:
       categories:
         - PuTTY
 
+  # JMeter
+  - scope:
+      path: "JMeter"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "JMeter"
+      sidebar:
+        nav: "JMeter"
+      header:
+        overlay_image: /assets/images/Blog/JMeter.svg
+        overlay_filter: 0.4
+        caption : "Photo credit: [**Unsplash**](https://jmeter.apache.org/)" # 저작권 이미지
+      categories:
+        - JMeter
+
+  # FileZilla
+  - scope:
+      path: "FileZilla"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "FileZilla"
+      sidebar:
+        nav: "FileZilla"
+      header:
+        overlay_image: /assets/images/Blog/FileZilla.png
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:FileZilla_logo.svg)" # 저작권 이미지
+      categories:
+        - FileZilla
+
+  # ngrok
+  - scope:
+      path: "ngrok"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "ngrok"
+      sidebar:
+        nav: "ngrok"
+      header:
+        overlay_image: /assets/images/Blog/ngrok.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://pixabay.com/ko/users/skylarvision-2957633/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3344700)" # 저작권 이미지
+      categories:
+        - ngrok
+
+# Engineering
+  # Ansys Workbench
+  - scope:
+      path: "Ansys Workbench"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Ansys Workbench"
+      sidebar:
+        nav: "Ansys Workbench"
+      header:
+        overlay_image: /assets/images/Blog/Ansys Workbench.webp
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://images.ansys.com/is/image/ansys/2021-09-ansys-og?wid=1200)" # 저작권 이미지
+      categories:
+        - Ansys Workbench
+
 # Computer
   # C Language
   - scope:
@@ -424,7 +518,28 @@ defaults:
         caption: "Photo credit: [**Unsplash**](https://pixabay.com/ko/users/moebiusdream-756525/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973311)" # 저작권 이미지
       categories:
         - ATmega4809
- 
+  # Unity
+  - scope:
+      path: "Unity"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Unity"
+      sidebar:
+        nav: "Unity"
+      header:
+        overlay_image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/1024px-Unity_Technologies_logo.svg.png
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/1024px-Unity_Technologies_logo.svg.png)" # 저작권 이미지
+      categories:
+        - Unity
   # Basic Electronics
   - scope:
       path: "Basic Electronics"
@@ -447,3 +562,119 @@ defaults:
         caption: "Photo credit: [**Unsplash**](https://pixabay.com/ko/users/t_tide-508681/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1443256)" # 저작권 이미지
       categories:
         - Basic Electronics
+    # 3D Modeling
+  - scope:
+      path: "3D Modeling"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "3D Modeling"
+      sidebar:
+        nav: "3D Modeling"
+      header:
+        overlay_image: https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206)" # 저작권 이미지
+      categories:
+        - 3D Modeling
+
+
+# Self-Improvement
+  # Parent education
+  - scope:
+      path: "Parent education"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Parent education"
+      sidebar:
+        nav: "Parent education"
+      header:
+        overlay_image: /assets/images/Blog/parent education.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://pixabay.com/ko/users/publicdomainpictures-14/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=22194)" # 저작권 이미지
+      categories:
+        - Parent education
+
+    # Robot Algorithm
+  - scope:
+      path: "Robot Algorithm"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Robot Algorithm"
+      sidebar:
+        nav: "Robot Algorithm"
+      header:
+        overlay_image: #https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206
+        overlay_filter: 0.4
+        caption: #"Photo credit: [**Unsplash**](https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206)" # 저작권 이미지
+      categories:
+        - Robot Algorithm
+
+    # baekjoon
+  - scope:
+      path: "baekjoon"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "baekjoon"
+      sidebar:
+        nav: "baekjoon"
+      header:
+        overlay_image: #https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206
+        overlay_filter: 0.4
+        caption: #"Photo credit: [**Unsplash**](https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206)" # 저작권 이미지
+      categories:
+        - baekjoon
+
+    # matlab
+  - scope:
+      path: "matlab"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "matlab"
+      sidebar:
+        nav: "matlab"
+      header:
+        overlay_image: #https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206
+        overlay_filter: 0.4
+        caption: #"Photo credit: [**Unsplash**](https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206)" # 저작권 이미지
+      categories:
+        - matlab
