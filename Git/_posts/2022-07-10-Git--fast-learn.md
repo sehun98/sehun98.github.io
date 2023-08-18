@@ -55,7 +55,7 @@ $ git config --global core.editor "code --wait"
 3. Repository default branch 변경 (settings -> repositories)
    - main -> master로 변경
 
-<img src="/assets/images/post/Git/1.png" width="75%" height="75%" alt="1">
+![3](https://github.com/sehun98/TIL/assets/100746863/82c24294-9022-4da5-b82c-43843e243038)
 
 ### gitignore
 
@@ -244,7 +244,7 @@ $git branch
 $git log --all --oneline --graph
 ```
 
-<img src="/assets/images/post/Git/2.png" width="75%" height="75%" alt="2">
+![4](https://github.com/sehun98/TIL/assets/100746863/3d3e6b7b-d8fd-4a10-b5e1-9273ae844bc6)
 
 <br>
 
@@ -299,7 +299,7 @@ $git push -u origin 브랜치명
 > login 브랜치가 master 브랜치 이후의 커밋을 가리키고 있으면 
 > 그저 master 브랜치가 login 브랜치와 동일한 커밋을 가리키도록 이동시킬 뿐
 
-<img src="/assets/images/post/Git/3.png" width="100%" height="100%" alt="3">
+![5](https://github.com/sehun98/TIL/assets/100746863/4cd7eacf-2db0-4b35-804b-438c0f71634c)
 
 1. login branch 생성 및 이동
 
@@ -369,7 +369,7 @@ $git push -u origin 브랜치명
 > 별도의 커밋으로 만들고 나서 해당 브랜치가 그 커밋을 가리키도록 이동시킵니다. 
 > 그래서 이런 커밋은 부모가 여러 개고 Merge commit 이라고 부릅니다.
 
-<img src="/assets/images/post/Git/4.png" width="75%" height="75%" alt="4">
+![6](https://github.com/sehun98/TIL/assets/100746863/1966f0b2-865a-4790-82fe-5d5abc8203d8)
 
 1. signout 브랜치 생성 및 이동
 
@@ -459,7 +459,7 @@ $git push -u origin 브랜치명
 > Git은 해당 부분을 자동으로 Merge 하지 못한다. 
 > (반면 동일 파일이더라도 서로 다른 부분을 수정했다면, Conflict 없이 자동으로 Merge Commit 된다.)
 
-<img src="/assets/images/post/Git/5.png" width="75%" height="75%" alt="5">
+![7](https://github.com/sehun98/TIL/assets/100746863/48b6f116-9626-49ca-918e-eae57219fadb)
 
 1. hotfix 브랜치 생성 및 이동
 
@@ -641,21 +641,21 @@ $git push -u origin 브랜치명
 
 #### 원격 저장소 수정으로 충돌
 
-<img src="/assets/images/post/Git/6.png" width="75%" height="75%" alt="6">
+![8](https://github.com/sehun98/TIL/assets/100746863/267838a8-a664-474e-bb00-dfe0a1c6f5b9)
 
 - 첫 커밋
 
-<img src="/assets/images/post/Git/7.png" width="75%" height="75%" alt="7">
+![9](https://github.com/sehun98/TIL/assets/100746863/1870ec37-3590-410b-bf4e-8da62fdc220c)
 
 - 원격 저장소에서 수정 후 커밋
 
-  <img src="/assets/images/post/Git/8.png" width="100%" height="100%" alt="8">
+  ![10](https://github.com/sehun98/TIL/assets/100746863/f457b8df-ebae-4293-af75-372e367eff73)
 
-<img src="/assets/images/post/Git/9.png" width="75%" height="75%" alt="9">
+![11](https://github.com/sehun98/TIL/assets/100746863/ffe52144-ee26-4406-83fb-e390fc644b65)
 
 > [!!!! 오류 오류 오류 !!!!]
 
-<img src="/assets/images/post/Git/10.png" width="100%" height="100%" alt="10">
+![12](https://github.com/sehun98/TIL/assets/100746863/0ddda71f-153c-4b4f-aa33-ab8ef4ccc744)
 
 ```bash
 $ git push origin master
@@ -682,17 +682,16 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 >
 > 서로 다른 히스토리를 가지고 있다!!
 
-<img src="/assets/images/post/Git/11.png" width="50%" height="50%" alt="11">
+![13](https://github.com/sehun98/TIL/assets/100746863/e3e3f677-e712-43b5-aec6-d7f0be1bb022)
 
-<img src="/assets/images/post/Git/12.png" width="100%" height="100%" alt="12">
+![14](https://github.com/sehun98/TIL/assets/100746863/cd46d866-fd4e-4443-b5b3-d18f331b0f69)
 
 
 
 ##### 해결 방법
 
-<img src="/assets/images/post/Git/13.png" width="50%" height="50%" alt="13">
-
-<img src="/assets/images/post/Git/14.png" width="100%" height="100%" alt="14">
+![15](https://github.com/sehun98/TIL/assets/100746863/9239aabc-1652-4a5b-ab1d-dad83954db1e)
+![16](https://github.com/sehun98/TIL/assets/100746863/f79161d4-6901-4f36-893a-3551217fdb31)
 
 > 수정 후 재 push
 
@@ -745,11 +744,9 @@ $ git remote set-url origin 깃헙주소
 
 > 원상태로 되돌리기
 
-<img src="/assets/images/post/Git/15.png" width="100%" height="100%" alt="15">
+![17](https://github.com/sehun98/TIL/assets/100746863/78d2156a-438c-4893-afca-7562de6822df)
 
-<img src="/assets/images/post/Git/16.png" width="75%" height="75%" alt="16">
 
-<img src="/assets/images/post/Git/17.png" width="100%" height="100%" alt="17">
 
 사전 준비
 

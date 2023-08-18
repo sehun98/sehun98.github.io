@@ -106,7 +106,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/images/Blog/sehun.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**의료기기 개발자** 오세훈입니다. <br><br>세상을 욕하고 가래침을 줄곧 뱉었지만 정작 나 자신도 크게 다를 바 없었다. ··· 아무하는 일도 없이 꿈틀거리기만 했다. ··· 벌레처럼 나는 먹고 싸고 먹고 싸고 그런 존재였던 것이다. 어제가 오늘이고 오늘이 내일이었으며 내일은 다시 어제였다."
+  bio              : "**의료기기 개발자** 오세훈입니다. <br><br>세상을 욕하고 가래침을 줄곧 뱉었지만 정작 나 자신도 크게 다를 바 없었다. ··· 아무하는 일도 없이 꿈틀거리기만 했다. ··· 벌레처럼 나는 먹고 싸고 먹고 싸고 그런 존재였던 것이다. 어제가 오늘이고 오늘이 내일이었으며 내일은 다시 어제였다.<br>-세이노의 가르침-"
   location         : "Seoul, Republic of Korea"
   email            :
   links:
