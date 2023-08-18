@@ -29,7 +29,7 @@ $ git update-git-for-windows
 
 
 
-## Git Bash Here을 체크 해주어야 됩니다.
+### Git Bash Here을 체크 해주어야 됩니다.
 
 ![image](https://github.com/sehun98/TIL/assets/100746863/e01c58c3-2cc7-4c38-920c-f5e883756e32)
 

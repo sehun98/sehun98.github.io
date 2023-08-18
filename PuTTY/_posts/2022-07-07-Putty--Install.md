@@ -15,9 +15,8 @@ tags:
 
 <a href="https://www.softonic.kr/download/putty/windows/post-download">PuTTY 설치하기</a>
 
-<img src="/assets/images/post/PuTTY/1.png" width="100%" height="100%" alt="1">
-
-<img src="/assets/images/post/PuTTY/2.png" width="75%" height="75%" alt="2">
+<img width="801" alt="1" src="https://github.com/sehun98/TIL/assets/100746863/6135f1e4-538d-475d-9b5b-ad0d56e93337">
+<img width="365" alt="2" src="https://github.com/sehun98/TIL/assets/100746863/ebd1118e-32d6-46c4-a9dd-5053df45f252">
 
 <br>
 
