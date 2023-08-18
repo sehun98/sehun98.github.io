@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : *name
+  name             : *name "오세훈(Oh sehun)"
   avatar           : "/assets/images/Blog/sehun.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**꿈꾸는 개발자** 오세훈입니다. <br><br>도서 세이노의 가르침에서 말합니다. <br>"세상을 욕하고 가래침을 줄곧 뱉었지만 정작 나 자신도 크게 다를 바 없었다. <br>··· 아무하는 일도 없이 꿈틀거리기만 했다. ··· <br>벌레처럼 나는 먹고 싸고 먹고 싸고 그런 존재였던 것이다. 어제가 오늘이고 오늘이 내일이었으며 내일은 다시 어제였다.""
   location         : "Seoul, Republic of Korea"
