@@ -3,5 +3,7 @@ main:
   - auto_categories: true
   - title: "Manifesto"
     url: /Manifesto/
+  - title: "Portfolio"
+    url: /Portfolio/
   - title: "Study Archive"
     url: /Study_Archive/
