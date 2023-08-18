@@ -1,5 +1,5 @@
 ---
-title: "Basic Electronics : 기본 논리 게이트 실험 2"
+title: "Basic Electronics : OPAMP"
 excerpt: "기계적 스위치부터 트랜지스터로 구성한 기본 논리 게이트에 대해서 알아봅니다."
 categories:
   - Basic Electronics
