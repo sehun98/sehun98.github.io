@@ -233,9 +233,7 @@ BCD 코드에 +3 더하여 나타낸 코드로 자기 보수의 성질을 가지
 
 <img width="200" alt="249" src="https://github.com/sehun98/TIL/assets/100746863/c8cd4328-468f-4367-8313-61cd5b741164">
 
-### Propagation Delay에 의한 스위치 과도 현상
-
-<img width="750" alt="250" src="https://github.com/sehun98/TIL/assets/100746863/fb50b45e-0380-49bd-85b2-bcc4b1e85703">
+<img width="500" alt="250" src="https://github.com/sehun98/TIL/assets/100746863/fb50b45e-0380-49bd-85b2-bcc4b1e85703">
 
 
 

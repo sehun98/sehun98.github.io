@@ -15,6 +15,10 @@ categories:
 
 ![14](https://github.com/sehun98/TIL/assets/100746863/4f23ff24-b9e4-47a8-8d05-db5c706a1b6d)
 
+사진 출처 : https://velog.io/@jh8579/Java%EC%9D%98-Deep-Copy-Shallow-Copy
+
+
+
 <br>
 
 ## `열` 과 `행`
