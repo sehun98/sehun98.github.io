@@ -1,5 +1,5 @@
 ---
-title: "ATmega4809 : GPIO"
+title: "ATmega4809 : GPIO Button"
 excerpt: "General Purpose Input Output 제어 방법에 대해 학습합니다."
 categories:
   - ATmega4809
