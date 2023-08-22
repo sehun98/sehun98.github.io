@@ -22,7 +22,7 @@ categories:
   * 기억이 나지 않는다면 1장을 다시 보고 오길 바란다.
   * GPIO에서 버튼 구현을 위해 설정을 조금 바꿨으니 GPIO_Init()을 보고 오자.
   * 
-  * callback) GPIO_Init()을 보자.
+  * next) GPIO_Init()을 보자.
   * 
   * SEGMENT를 동작시키기 위해서는 우선 Initialization 을 진행해야한다.
   * 이때 하드웨어적으로 다알링톤에 의해 세그먼트의 동작을 유추하는 방법을 알아야한다. (Common Emitter Amp 를 생각해보자)
@@ -46,7 +46,7 @@ categories:
   *
   * 본론으로 돌아가 Initialization 을 진행해야한다.
   * 
-  * callback) SEG_Init()을 보자.
+  * next) SEG_Init()을 보자.
   */ 
 
 #define F_CPU 5000000UL
@@ -94,7 +94,7 @@ int main(void)
 		 * 
 		 * segSignedDisplay 를 설정을 했다면 segSignedDisplay() 를 작성해 보자.
 		 * 
-		 * callback) segSignedDisplay()을 보자.
+		 * next) segSignedDisplay()을 보자.
 		 */
 		segSignedDisplay(-103);
     }
@@ -113,7 +113,7 @@ void CLK_Init(void)
  * PORTF.PIN6CTRL |= PORT_PULLUPEN_bm;
  * 내부에서 pull up 설정을 해줌으로 노이즈에 대비를 한다.
  *
- * callback) return 맨 처음으로 되돌아간다.
+ * next) return 맨 처음으로 되돌아간다.
  */
 void GPIO_Init(void)
 {
@@ -137,7 +137,7 @@ void TCB0_Init(void)
  *
  * 설정이 완료가 되었다면 main()의 while(1)로 들어가 segSignedDisplay(data);를 만들어준다.
  *
- * callback) main()의 while(1)로 들어가 segSignedDisplay(data);
+ * next) main()의 while(1)로 들어가 segSignedDisplay(data);
  */
 void SEG_Init(void)
 {
@@ -173,7 +173,7 @@ void SEG_Init(void)
  * 
  * 데이터를 넣어주는 과정을 마쳤다. 넣어준 데이터를 Display 하기 위해 Anti Ghost 를 진행하자.
  *
- * callback) ISR(TCB0_INT_vect)
+ * next) ISR(TCB0_INT_vect)
  */
 void segSignedDisplay(int16_t data)
 {
@@ -207,7 +207,7 @@ void segSignedDisplay(int16_t data)
  * Anti Ghost를 진행하지 않을 경우 Ghost 현상이 보이게 된다.
  * segAntiGhostISR(Cnt1000Hz)를 만들어주자.
  *
- * callback) segAntiGhostISR(Cnt1000Hz)
+ * next) segAntiGhostISR(Cnt1000Hz)
  */
 ISR(TCB0_INT_vect)
 {

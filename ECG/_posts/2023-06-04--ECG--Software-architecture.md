@@ -277,12 +277,6 @@ uint16_t peak_detection(uint32_t moving_average_filtered_data)
 
 ### LabView
 
-
-
-```html
-<iframe width="750" height="315" src="https://github.com/sehun98/TIL/assets/100746863/9cb88d07-1455-4288-817e-806c017344cb" frameborder="0" allowfullscreen></iframe>
-```
-
 <img width="750" alt="11" src="https://github.com/sehun98/TIL/assets/100746863/04bc083c-50f6-4b35-8041-4efd1f6f7cab">
 
 <img width="750" alt="12" src="https://github.com/sehun98/TIL/assets/100746863/aee98a5c-1426-4af4-b905-c13705d38190">
