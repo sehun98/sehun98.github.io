@@ -464,9 +464,32 @@ defaults:
         nav: "ECG"
       header:
         overlay_image: /assets/images/Blog/ECG.jpg
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/@joshua_chehov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" # 저작권 이미지
         overlay_filter: 0.4
       categories:
         - ECG
+  # PADS
+  - scope:
+      path: "PADS"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "PADS"
+      sidebar:
+        nav: "PADS"
+      header:
+        overlay_image: /assets/images/Blog/PADS.png
+        caption: "Photo credit: [**Unsplash**](http://www.ednc.com/2012/09/pads-layout/)" # 저작권 이미지
+        overlay_filter: 0.4
+      categories:
+        - PADS
     # 3D Modeling
   - scope:
       path: "3D Modeling"
