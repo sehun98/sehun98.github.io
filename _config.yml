@@ -446,6 +446,27 @@ defaults:
         caption: "Photo credit: [**Unsplash**](https://pixabay.com/ko/users/t_tide-508681/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1443256)" # 저작권 이미지
       categories:
         - Basic Electronics
+  # ECG
+  - scope:
+      path: "ECG"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "ECG"
+      sidebar:
+        nav: "ECG"
+      header:
+        overlay_image: /assets/post/6.png
+        overlay_filter: 0.4
+      categories:
+        - ECG
     # 3D Modeling
   - scope:
       path: "3D Modeling"
