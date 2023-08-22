@@ -463,7 +463,7 @@ defaults:
       sidebar:
         nav: "ECG"
       header:
-        overlay_image: /assets/images/post/6.png
+        overlay_image: /assets/images/Blog/ECG.jpg
         overlay_filter: 0.4
       categories:
         - ECG
