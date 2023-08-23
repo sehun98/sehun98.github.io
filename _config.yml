@@ -490,6 +490,30 @@ defaults:
         overlay_filter: 0.4
       categories:
         - PADS
+
+  # Ultra Librarian
+  - scope:
+      path: "Ultra Librarian"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Ultra Librarian"
+      sidebar:
+        nav: "Ultra Librarian"
+      header:
+        overlay_image: /assets/images/Blog/Ultra Librarian.webp
+        caption: "Photo credit: [**Unsplash**](https://www.ultralibrarian.com/)" # 저작권 이미지
+        overlay_filter: 0.4
+      categories:
+        - Ultra Librarian
+
     # 3D Modeling
   - scope:
       path: "3D Modeling"
