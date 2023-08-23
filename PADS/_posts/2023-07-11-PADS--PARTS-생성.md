@@ -1,6 +1,6 @@
 ---
-title: "PADS : PARTS 생성"
-excerpt: "PADS 부품 제작의 시작 PARTS"
+title: "PADS : Parts 생성"
+excerpt: "PADS 부품 제작의 시작 Parts"
 categories:
   - PADS
 ---
