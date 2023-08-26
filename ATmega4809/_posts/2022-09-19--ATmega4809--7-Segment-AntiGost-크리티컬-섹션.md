@@ -1,6 +1,6 @@
 ---
 title: "ATmega4809 : 7 Segment"
-excerpt: "Interrupt 호출 방법에 대해 학습합니다."
+excerpt: "7SEG와 크리티컬 섹션을 방지하는 방법"
 categories:
   - ATmega4809
 ---
