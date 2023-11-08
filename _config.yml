@@ -605,3 +605,26 @@ defaults:
         caption: #"Photo credit: [**Unsplash**](https://t1.daumcdn.net/cfile/tistory/9970E9475BB6BF6206)" # 저작권 이미지
       categories:
         - matlab
+
+    # FPGA Project
+  - scope:
+      path: "FPGA Project"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "FPGA Project"
+      sidebar:
+        nav: "FPGA Project"
+      header:
+        overlay_image: //upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/250px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://ko.wikipedia.org/wiki/%EC%97%90%EB%8B%88%EC%95%85)" # 저작권 이미지
+      categories:
+        - FPGA Project

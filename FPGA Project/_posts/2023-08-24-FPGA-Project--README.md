@@ -1,8 +1,8 @@
 ---
-title: "FPGA-Project : README"
-excerpt: "FPGA-Project 카테고리 수정사항입니다."
+title: "FPGA Project : README"
+excerpt: "FPGA Project 카테고리 수정사항입니다."
 categories:
-  - FPGA-Project
+  - FPGA Project
 ---
 
 <br>
