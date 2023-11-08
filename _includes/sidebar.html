@@ -1,7 +1,7 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky"> # 만약 페이지에 저자 프로필이나 레이아웃에 저자 프로필 또는 페이지 사이드바가 있는 경우, 고정 사이드바 컨테이너를 생성합니다.
+  <div class="sidebar sticky"> <!-- 만약 페이지에 저자 프로필이나 레이아웃에 저자 프로필 또는 페이지 사이드바가 있는 경우, 고정 사이드바 컨테이너를 생성합니다. -->
   {% if page.author_profile or layout.author_profile %}
-    {% include author-profile.html %}  # 페이지에 저자 프로필이나 레이아웃에 저자 프로필이 있는 경우, 'author-profile.html' 파일을 포함하여 저자 프로필을 표시합니다.
+    {% include author-profile.html %}  <!-- 페이지에 저자 프로필이나 레이아웃에 저자 프로필이 있는 경우, 'author-profile.html' 파일을 포함하여 저자 프로필을 표시합니다. -->
   {% endif %}
   
   {% if page.sidebar %}
@@ -9,24 +9,24 @@
     {% for s in page.sidebar %}
       {% if s.image %}
         <img src="{{ s.image | relative_url }}"
-             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}"> # 페이지 사이드바에 이미지가 있는 경우, 이미지를 표시합니다.
+             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}"> <!-- 페이지 사이드바에 이미지가 있는 경우, 이미지를 표시합니다. -->
       {% endif %}
 
       {% if s.title %}
-        <h3>{{ s.title }}</h3> # 페이지 사이드바에 제목이 있는 경우, 제목을 표시합니다.
+        <h3>{{ s.title }}</h3> <!-- 페이지 사이드바에 제목이 있는 경우, 제목을 표시합니다. -->
       {% endif %}
       
       {% if s.text %}
-        {{ s.text | markdownify }} # 페이지 사이드바에 텍스트가 있는 경우, 텍스트를 마크다운으로 해석하여 표시합니다.
+        {{ s.text | markdownify }} <!-- 페이지 사이드바에 텍스트가 있는 경우, 텍스트를 마크다운으로 해석하여 표시합니다. -->
       {% endif %}
       
       {% if s.nav %}
-        {% include nav_list nav=s.nav %} # 페이지 사이드바에 내비게이션 목록이 있는 경우, 'nav_list'를 포함하여 내비게이션 목록을 표시합니다.
+        {% include nav_list nav=s.nav %} <!-- 페이지 사이드바에 내비게이션 목록이 있는 경우, 'nav_list'를 포함하여 내비게이션 목록을 표시합니다. -->
       {% endif %}
     {% endfor %}
 
     {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}  # 페이지 사이드바에 내비게이션 목록이 있는 경우, 'nav_list'를 포함하여 내비게이션 목록을 표시합니다.
+      {% include nav_list nav=page.sidebar.nav %} <!-- 페이지 사이드바에 내비게이션 목록이 있는 경우, 'nav_list'를 포함하여 내비게이션 목록을 표시합니다. -->
     {% endif %}
   {% endif %}
   </div>

@@ -7,19 +7,19 @@ layout: archive
 {% assign categories_max = 0 %}
 {% for category in site.categories %}
   {% if category[1].size > categories_max %}
-    {% assign categories_max = category[1].size %} # 'categories_max' 변수에 사이트의 카테고리 중에서 가장 큰 카테고리 크기를 할당합니다.
+    {% assign categories_max = category[1].size %}  <!-- 'categories_max' 변수에 사이트의 카테고리 중에서 가장 큰 카테고리 크기를 할당합니다. -->
   {% endif %}
 {% endfor %}
 
 
 <ul class="taxonomy__index">
-  {% for i in (1..categories_max) reversed %}  # 가장 큰 카테고리 크기에서 시작하여 역순으로 반복합니다.
-    {% for category in site.categories %} # 사이트의 모든 카테고리에 대해 반복합니다.
-      {% if category[1].size == i %} # 현재 카테고리의 포스트 수가 'i'와 같은 경우
+  {% for i in (1..categories_max) reversed %}  <!-- 가장 큰 카테고리 크기에서 시작하여 역순으로 반복합니다. -->
+    {% for category in site.categories %} <!-- 사이트의 모든 카테고리에 대해 반복합니다. -->
+      {% if category[1].size == i %} <!-- 현재 카테고리의 포스트 수가 'i'와 같은 경우 -->
         <li>
-          <a href="#{{ category[0] | slugify }}">   # 해당 카테고리로 스크롤할 수 있는 링크를 생성합니다.
+          <a href="#{{ category[0] | slugify }}">   <!-- 해당 카테고리로 스크롤할 수 있는 링크를 생성합니다. -->
           <!-- <p onclick=window.open("#{{ category[0] | slugify }}","_self")> -->
-            <strong># {{ category[0] }}</strong><span class="taxonomy__count">{{ i }}</span> # 카테고리 이름과 해당 카테고리의 포스트 수를 표시합니다.
+            <strong># {{ category[0] }}</strong><span class="taxonomy__count">{{ i }}</span> <!-- 카테고리 이름과 해당 카테고리의 포스트 수를 표시합니다. -->
           <!-- </p> -->
           </a>
         </li>
@@ -29,17 +29,17 @@ layout: archive
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% for i in (1..categories_max) reversed %} # 가장 큰 카테고리 크기에서 시작하여 역순으로 반복합니다.
-  {% for category in site.categories %}   # 사이트의 모든 카테고리에 대해 반복합니다.
-    {% if category[1].size == i %}  # 현재 카테고리의 포스트 수가 'i'와 같은 경우
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section"> # 해당 카테고리의 섹션을 생성합니다.
-        <h2 class="archive__subtitle">{{ category[0] }}</h2>  # 카테고리 이름을 표시하는 제목을 생성합니다.
-        <div class="entries-{{ entries_layout }}"> # 포스트 엔트리의 레이아웃을 정의합니다.
-          {% for post in category.last %} # 현재 카테고리의 모든 포스트에 대해 반복합니다.
-            {% include archive-single.html type=entries_layout %}  # 각 포스트를 표시하는 포함 파일을 불러옵니다.
+{% for i in (1..categories_max) reversed %} <!-- 가장 큰 카테고리 크기에서 시작하여 역순으로 반복합니다. -->
+  {% for category in site.categories %}   <!-- 사이트의 모든 카테고리에 대해 반복합니다. -->
+    {% if category[1].size == i %}  <!-- 현재 카테고리의 포스트 수가 'i'와 같은 경우 -->
+      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section"> <!-- 해당 카테고리의 섹션을 생성합니다. -->
+        <h2 class="archive__subtitle">{{ category[0] }}</h2>  <!-- 카테고리 이름을 표시하는 제목을 생성합니다. -->
+        <div class="entries-{{ entries_layout }}"> <!-- 포스트 엔트리의 레이아웃을 정의합니다. -->
+          {% for post in category.last %} <!-- 현재 카테고리의 모든 포스트에 대해 반복합니다. -->
+            {% include archive-single.html type=entries_layout %}  <!-- 각 포스트를 표시하는 포함 파일을 불러옵니다. -->
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>  # 페이지 상단으로 스크롤하는 링크를 생성합니다.
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>  <!-- 페이지 상단으로 스크롤하는 링크를 생성합니다. -->
       </section>
     {% endif %}
   {% endfor %}

@@ -1,52 +1,52 @@
 ---
 layout: archive
 ---
-{{ content }} # 페이지 콘텐츠를 표시합니다.
+{{ content }} <!-- 페이지 콘텐츠를 표시합니다. -->
 
 {% for post in paginator.posts limit: site.paginate %}
   {% if post %}
-    {% assign category = "" %} # 포스트의 카테고리를 초기화합니다.
-    {% for cat in post.categories limit: 3 %} # 포스트의 카테고리 중에서 최대 3개까지 반복합니다.
-      {% assign cat_name = cat | downcase | replace: " ", "-" %} # 카테고리 이름을 소문자로 변환하고 공백을 대시로 대체합니다.
-      {% capture cat_url %}/{{ cat_name }}/{% endcapture %} # 카테고리 URL을 생성합니다.
-      {% assign cat_page = site.pages | where: "url", cat_url %}  # 해당 URL을 가진 페이지를 찾습니다.
+    {% assign category = "" %} <!-- 포스트의 카테고리를 초기화합니다. -->
+    {% for cat in post.categories limit: 3 %} <!-- 포스트의 카테고리 중에서 최대 3개까지 반복합니다. -->
+      {% assign cat_name = cat | downcase | replace: " ", "-" %} <!-- 카테고리 이름을 소문자로 변환하고 공백을 대시로 대체합니다. -->
+      {% capture cat_url %}/{{ cat_name }}/{% endcapture %} <!-- 카테고리 URL을 생성합니다. -->
+      {% assign cat_page = site.pages | where: "url", cat_url %}  <!-- 해당 URL을 가진 페이지를 찾습니다. -->
       
-      {% if cat_page != empty %} # 페이지가 존재하는 경우
-        {% assign cat_lbl = cat_page.title %}     # 카테고리 레이블을 페이지 제목으로 설정합니다.   
-      {% else %} # 페이지가 없는 경우
-        {% assign cat_lbl = cat %}  # 카테고리 레이블을 카테고리 이름으로 설정합니다.
-        {% capture cat_url %}/categories/#{{ cat_name }}{% endcapture %} # 기본 카테고리 URL을 생성합니다.
+      {% if cat_page != empty %} <!-- 페이지가 존재하는 경우 -->
+        {% assign cat_lbl = cat_page.title %}     <!-- 카테고리 레이블을 페이지 제목으로 설정합니다.    -->
+      {% else %} <!-- 페이지가 없는 경우 -->
+        {% assign cat_lbl = cat %}  <!-- 카테고리 레이블을 카테고리 이름으로 설정합니다. -->
+        {% capture cat_url %}/categories/#{{ cat_name }}{% endcapture %} <!-- 기본 카테고리 URL을 생성합니다. -->
       {% endif %}
 
-      {% if cat_lbl == nil or cat_lbl == empty %}{% assign cat_lbl = cat %}{% endif %} # 카테고리 레이블이 비어 있거나 null인 경우, 카테고리 이름으로 설정합니다.
-      {% assign cat_lbl = cat_lbl | capitalize %} # 카테고리 레이블을 대문자로 변환합니다.
+      {% if cat_lbl == nil or cat_lbl == empty %}{% assign cat_lbl = cat %}{% endif %} <!-- 카테고리 레이블이 비어 있거나 null인 경우, 카테고리 이름으로 설정합니다. -->
+      {% assign cat_lbl = cat_lbl | capitalize %} <!-- 카테고리 레이블을 대문자로 변환합니다.  -->
       
-      {% capture cat_link %}[**{{ cat_lbl }}**]({{ cat_url }}){% endcapture %} # 카테고리 링크를 생성합니다.
+      {% capture cat_link %}[**{{ cat_lbl }}**]({{ cat_url }}){% endcapture %} <!-- 카테고리 링크를 생성합니다. -->
       
-      {% if category != empty %}{% assign category = category | append: ", " %}{% endif %} # 카테고리가 비어 있지 않은 경우, 쉼표와 공백을 추가합니다.
-      {% assign category = category | append: cat_link %} # 카테고리 링크를 카테고리 변수에 추가합니다.
+      {% if category != empty %}{% assign category = category | append: ", " %}{% endif %} <!-- 카테고리가 비어 있지 않은 경우, 쉼표와 공백을 추가합니다. -->
+      {% assign category = category | append: cat_link %} <!-- 카테고리 링크를 카테고리 변수에 추가합니다. -->
     {% endfor %}
-    {% if category == empty %}{% assign category = nil %}{% endif %} # 카테고리가 비어 있는 경우, 카테고리 변수를 초기화합니다.
+    {% if category == empty %}{% assign category = nil %}{% endif %} <!-- 카테고리가 비어 있는 경우, 카테고리 변수를 초기화합니다. -->
     
-    {% assign filter = page.header.overlay_filter | default: post.header.overlay_filter %} # 오버레이 필터를 설정합니다.
-    {% assign color = page.header.overlay_color | default: post.header.overlay_color %}  # 오버레이 색상을 설정합니다.
+    {% assign filter = page.header.overlay_filter | default: post.header.overlay_filter %} <!-- 오버레이 필터를 설정합니다. -->
+    {% assign color = page.header.overlay_color | default: post.header.overlay_color %}  <!-- 오버레이 색상을 설정합니다. -->
 
-    {% assign image = nil %}  # 이미지 변수를 초기화합니다.
-    {% assign color = nil %}  # 색상 변수를 초기화합니다.
-    {% if post.header.overlay_image %}  # 포스트에 오버레이 이미지가 있는 경우    
-      {% capture image %}{{ post.header.overlay_image }}{% endcapture %}  # 이미지 변수에 오버레이 이미지를 할당합니다.
-    {% elsif post.header.image %}  # 포스트에 이미지가 있는 경우     
-      {% capture image %}{{ post.header.image }}{% endcapture %} # 이미지 변수에 이미지를 할당합니다.
-    {% else %} # 이미지가 없는 경우
-      {% unless color %} # 색상이 지정되지 않은 경우
-        {% assign min = 96 %} # 최소 RGB 값 설정
-        {% assign max = 160 %} # 최대 RGB 값 설정
-        {% assign diff = max | minus: min %} # RGB 값의 범위 계산
-        {% assign r = "now" | date: "%N" | modulo: diff | plus: min %} # 현재 시간을 기반으로 RGB 값 계산 (적절한 범위 내에서)
+    {% assign image = nil %}  <!-- 이미지 변수를 초기화합니다. -->
+    {% assign color = nil %}  <!-- 색상 변수를 초기화합니다. -->
+    {% if post.header.overlay_image %}  <!-- 포스트에 오버레이 이미지가 있는 경우     -->
+      {% capture image %}{{ post.header.overlay_image }}{% endcapture %}  <!-- 이미지 변수에 오버레이 이미지를 할당합니다. -->
+    {% elsif post.header.image %}  <!-- 포스트에 이미지가 있는 경우      -->
+      {% capture image %}{{ post.header.image }}{% endcapture %} <!-- 이미지 변수에 이미지를 할당합니다. -->
+    {% else %} <!-- 이미지가 없는 경우 -->
+      {% unless color %} <!-- 색상이 지정되지 않은 경우 -->
+        {% assign min = 96 %} <!-- 최소 RGB 값 설정 -->
+        {% assign max = 160 %} <!-- 최대 RGB 값 설정 -->
+        {% assign diff = max | minus: min %} <!-- RGB 값의 범위 계산 -->
+        {% assign r = "now" | date: "%N" | modulo: diff | plus: min %} <!-- 현재 시간을 기반으로 RGB 값 계산 (적절한 범위 내에서) -->
         {% assign g = "now" | date: "%N" | modulo: diff | plus: min %}
         {% assign b = "now" | date: "%N" | modulo: diff | plus: min %}
-        {% capture color %}rgb({{ r }},{{ g }},{{ b }}){% endcapture %} # 계산된 RGB 값으로 색상을 설정합니다.
-      {% endunless %}  # 색상이 지정되지 않은 경우     
+        {% capture color %}rgb({{ r }},{{ g }},{{ b }}){% endcapture %} <!-- 계산된 RGB 값으로 색상을 설정합니다. -->
+      {% endunless %}  <!-- 색상이 지정되지 않은 경우     --> 
     {% endif %}
 
     {% include excerpt_hero.html 
@@ -59,9 +59,9 @@ layout: archive
       tagline = post.tagline
       style = "padding: 1.5em 0; margin-bottom: 0.5em; border-radius: 20px;"
       caption = category
-    %} # excerpt_hero.html 파일을 포함하여 포스트 정보와 오버레이 이미지, 필터, 색상 등을 표시합니다.
+    %} <!-- excerpt_hero.html 파일을 포함하여 포스트 정보와 오버레이 이미지, 필터, 색상 등을 표시합니다. -->
 
   {% endif %}
 {% endfor %}
 
-{% include paginator.html %} # 페이지네이션을 포함합니다.
+{% include paginator.html %} <!-- 페이지네이션을 포함합니다. -->
