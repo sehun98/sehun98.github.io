@@ -623,8 +623,8 @@ defaults:
       sidebar:
         nav: "FPGA Project"
       header:
-        overlay_image: //upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/250px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg
+        overlay_image: http://thescienceplus.com/news/data/20221216/p1065619058946528_979_thum.jpg
         overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://ko.wikipedia.org/wiki/%EC%97%90%EB%8B%88%EC%95%85)" # 저작권 이미지
+        caption: "Photo credit: © vlabo/ 게티 이미지" # 저작권 이미지
       categories:
         - FPGA Project
