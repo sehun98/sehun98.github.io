@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/sehun98/sehun98.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/Blog/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "정리하는 개발자" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Hello, World!!" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/images/Blog/sehun.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**의료기기 개발자** 오세훈입니다. <br><br>세상을 욕하고 가래침을 줄곧 뱉었지만 정작 나 자신도 크게 다를 바 없었다. ··· 아무하는 일도 없이 꿈틀거리기만 했다. ··· 벌레처럼 나는 먹고 싸고 먹고 싸고 그런 존재였던 것이다. 어제가 오늘이고 오늘이 내일이었으며 내일은 다시 어제였다.<br>-세이노의 가르침-"
+  bio              : "**미래를 만드는 시스템 개발자** 오세훈입니다. <br><br>우리의 인생을 방해하는 두 가지가 있다. 하나는 어느 것도 끝내지 않는 것, 다른 하나는 어느 것도 시작하지 않은 것."
   location         : "Seoul, Republic of Korea"
   email            :
   links:

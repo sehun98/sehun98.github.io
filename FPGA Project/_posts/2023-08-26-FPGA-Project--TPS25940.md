@@ -34,6 +34,11 @@ categories:
 3. Programmable dVo/dt control
 4. Over Voltage Protect
 5. Under Voltage Protect 
+6. thermal shutdown
+7. hot plug in
+8. hot swap
+9. in-rush bloking
+10. brown down
 
 
 
@@ -41,7 +46,7 @@ power management devices with a full suite of protection functions
 
 #### Protect
 
-`Over Current`, `dVo/dt Ramp ` , `Over Voltage`, `Under Voltage` 
+`Over Current`, `dVo/dt Ramp ` , `Over Voltage`, `Under Voltage` , `thermal shutdown`
 
 
 

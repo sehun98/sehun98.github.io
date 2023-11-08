@@ -44,3 +44,14 @@ layout: archive
     {% endif %}
   {% endfor %}
 {% endfor %}
+
+<div class="category-navigation">
+  <h3>카테고리 내비게이션</h3>
+  <ul>
+    {% for category in site.categories %}
+      <li>
+        <a href="#{{ category[0] | slugify }}">{{ category[0] }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
